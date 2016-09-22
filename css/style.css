@@ -1,0 +1,93 @@
+body {
+	/*background-color: #B4BBBE;*/
+	background: url(../images/lined_paper.png);
+}
+h1 {
+	font-size: 46px;
+}
+
+#board {
+	margin-top: 40px;
+	height: 500px;
+	width: 80%;
+	
+	text-align: center;
+    position: relative;
+    font-family: 'Permanent Marker', cursive;
+
+	
+}
+.row {
+	height: 33.33333%;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.game-overlay {
+	height: 100%;
+	width: 100%;
+	/*background-color: #fff;*/
+	
+	
+	
+	
+
+}
+
+.gameChoice-buttons {
+	margin-top: 40px;
+}
+
+button {
+	font-size: 24px;
+	border: 5px solid #000;
+	background-color: transparent;
+}
+
+.token-choice, .player-choice {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: 50px;
+	
+
+}
+
+.token-choice {
+	display: none;
+}
+
+.game-board {
+	height: 100%;
+	display: none;
+	
+
+}
+
+.game-board h2 {
+	margin-bottom: 25px;
+}
+
+.game-over {
+	margin-top: 20px;
+	display: none;
+}
+
+.board-space {
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+	font-size: 60px;
+	padding-top: 30px;
+}
+
+.space1, .space2, .space4, .space5, .space7, .space8 {
+	border-right: 3px solid black;
+	
+}
+
+.space1, .space2, .space3, .space4, .space5, .space6 {
+	border-bottom: 3px solid black;
+}
