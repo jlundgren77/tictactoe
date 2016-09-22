@@ -60,6 +60,7 @@ $(document).ready(function() {
 			
 			if ($("." + space).html() == "") {
 				$("." + space).html(this.currentMove);
+				return true;
 			} else {
 				return false;
 			}
@@ -291,11 +292,13 @@ $(document).ready(function() {
 		if (game.inplay) {
 			var boardSpace = $(this).attr('class').split(" ")[0];
 
+			if (game.playerMove(boardSpace, game.getCurrentMove())) {
+				checkWinner(game.getCurrentMove);
+				game.changePlayer();
+				game.displayCurrentPlayer(game, game.getCurrentMove());
+			}
 			
-			game.playerMove(boardSpace, game.getCurrentMove());
-			checkWinner(game.getCurrentMove);
-			game.changePlayer();
-			game.displayCurrentPlayer(game, game.getCurrentMove());
+			
 			
 
 			
